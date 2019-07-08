@@ -1,0 +1,15 @@
+string=input()
+
+dis=len(list(set(list(string))))
+print(dis)
+mins=n
+for i in range(n): 
+    for j in range(n): 
+        stri = string[i:j] 
+        l= len(stri) 
+        char = len(list(set(list(stri)))) 
+        if l<=mins and char==l:
+            mins =l 
+print(mins)
+    
+    
